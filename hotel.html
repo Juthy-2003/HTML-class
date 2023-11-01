@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pFinal Hotel </title>
+    <link rel="stylesheet" href="hotel.css">
+    <script src="https://kit.fontawesome.com/5123d6036d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="pictures/" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#pages">pages</a> </li>
+          <li><a href="#news">news</a> </li>
+          <li><a href="#contact">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">BOOK NOW</button> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+<!-- ------------------------------------------ -->
+
+<section class="home">
+    <div class="content">
+      
+        <div class="item">
+          <img src="pictures/5.jpg" alt="">
+          
+          <div class="text">
+            <h1>Spend Your Holiday</h1>
+            <p>With our destination based best hotels. 
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+<section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Persons">
+          <input type="number" placeholder="ID no.">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!------------------- hotel details----------------------- -->
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/maldive.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+                <!-- <p> Read Below </p> -->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Location1')">Location</p>
+                    <p class="tab-links" onclick="opentab('Expense1')">Expense</p>
+                    <p class="tab-links" onclick="opentab('avail1')">Availability</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Location1">
+                    <ul>
+                        
+                        <li><span>Hotel Name</span><br>Gollassa Hotel</li>
+                        <li><span>Place</span><br>mooosss, Maldive</li>
+                        <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expense1">
+                    <ul>
+
+                        <li><span>single bedroom</span><br>Per night 1000$</li>
+                        <li><span>double bedroom </span><br>Per night 2000$ </li>
+                        <li><span>For more enquiry</span><br>contact us directly</li>
+                        
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="avail1">
+                    <ul>
+                        <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                        <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                        <li><span>For Booking</span><br>ID number is 9001</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+
+    
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+                <!-- <p> Read Below </p> -->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Location2')">Location</p>
+                    <p class="tab-links" onclick="opentab('Expense2')">Expense</p>
+                    <p class="tab-links" onclick="opentab('avail2')">Availability</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Location2">
+                    <ul>
+                        <li><span>hotel Name</span><br>Pikasu Hotel</li>
+                        <li><span>Place</span><br>Shiki, Tokyo</li>
+                        <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expense2">
+                    <ul>
+
+                        <li><span>single bedroom</span><br>Per night 1000$</li>
+                        <li><span>double bedroom </span><br>Per night 2000$ </li>
+                        <li><span>For more enquiry</span><br>contact us directly</li>
+                        
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="avail2">
+                    <ul>
+                        <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                        <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                        <li><span>For Booking</span><br>ID number is 9002</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- --------------------------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/8.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+                <!-- <p> Read Below </p> -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Location3')">Location</p>
+                    <p class="tab-links" onclick="opentab('Expense3')">Expense</p>
+                    <p class="tab-links" onclick="opentab('avail3')">Availability</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Location3">
+                    <ul>
+                        <li><span>Hotel Name </span><br>Beach Hotel</li>
+                        <li><span>Place</span><br>Kuiarto, Spain</li>
+                        <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expense3">
+                    <ul>
+
+                        <li><span>single bedroom</span><br>Per night 1000$</li>
+                        <li><span>double bedroom </span><br>Per night 2000$ </li>
+                        <li><span>For more enquiry</span><br>contact us directly</li>
+                        
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="avail3">
+                    <ul>
+                        <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                        <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                        <li><span>For Booking</span><br>ID number is 9003</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/5.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+            <!-- <p> Read Below </p> -->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Location4')">Location</p>
+                    <p class="tab-links" onclick="opentab('Expense4')">Expense</p>
+                    <p class="tab-links" onclick="opentab('avail4')">Availability</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Location4">
+                    <ul>
+                        <li><span>Hotel Name</span><br>Shimanto</li>
+                        <li><span>Place</span><br>Cox's Bazar, Bangladesh/li>
+                        <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expense4">
+                    <ul>
+
+                        <li><span>single bedroom</span><br>Per night 1000$</li>
+                        <li><span>double bedroom </span><br>Per night 2000$ </li>
+                        <li><span>For more enquiry</span><br>contact us directly</li>
+                        
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="avail4">
+                    <ul>
+                        <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                        <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                        <li><span>For Booking</span><br>ID number is 9004</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+                <!-- <p> Read Below </p> -->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Location5')">Location</p>
+                    <p class="tab-links" onclick="opentab('Expense5')">Expense</p>
+                    <p class="tab-links" onclick="opentab('avail5')">Availability</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Location5">
+                    <ul>
+                        <li><span>Hotel Name</span><br>mooya</li>
+                        <li><span>Place</span><br>Mumbai, India</li>
+                        <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expense5">
+                    <ul>
+
+                        <li><span>single bedroom</span><br>Per night 1000$</li>
+                        <li><span>double bedroom </span><br>Per night 2000$ </li>
+                        <li><span>For more enquiry</span><br>contact us directly</li>
+                        
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="avail5">
+                    <ul>
+                        <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                        <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                        <li><span>For Booking</span><br>ID number is 9005</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ---------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/6.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+                    <!-- <p> Read Below </p> -->
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Location6')">Location</p>
+                        <p class="tab-links" onclick="opentab('Expense6')">Expense</p>
+                        <p class="tab-links" onclick="opentab('avail6')">Availability</p>
+    
+                    </div>
+                    <div class="tab-contents active-tab" id="Location6">
+                        <ul>
+                            <li><span>Hotel Name</span><br>mooya</li>
+                            <li><span>Place</span><br>Mumbai, India</li>
+                            <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Expense6">
+                        <ul>
+    
+                            <li><span>single bedroom</span><br>Per night 1000$</li>
+                            <li><span>double bedroom </span><br>Per night 2000$ </li>
+                            <li><span>For more enquiry</span><br>contact us directly</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="avail6">
+                        <ul>
+                            <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                            <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                            <li><span>For Booking</span><br>ID number is 9006</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<!-- ---------------------------- -->
+
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="pictures/10.jpg">
+        </div>
+        <div class="about-col-2">
+             <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+            <!-- <p> Read Below </p> -->
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Location7')">Location</p>
+                <p class="tab-links" onclick="opentab('Expense7')">Expense</p>
+                <p class="tab-links" onclick="opentab('avail7')">Availability</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="Location7">
+                <ul>
+                    <li><span>Hotel Name</span><br>mooya</li>
+                    <li><span>Place</span><br>Mumbai, India</li>
+                    <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="Expense7">
+                <ul>
+
+                    <li><span>single bedroom</span><br>Per night 1000$</li>
+                    <li><span>double bedroom </span><br>Per night 2000$ </li>
+                    <li><span>For more enquiry</span><br>contact us directly</li>
+                </ul>
+            </div> 
+            <div class="tab-contents" id="avail7">
+                <ul>
+                    <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                    <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                    <li><span>For Booking</span><br>ID number is 9007</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ---------------------------- -->
+
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="pictures/4.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 style="color: darkred;" class="sub-title">Read about the hotel in details</h1>
+            <!-- <p> Read Below </p> -->
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Location8')">Location</p>
+                <p class="tab-links" onclick="opentab('Expense8')">Expense</p>
+                <p class="tab-links" onclick="opentab('avail8')">Availability</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="Location8">
+                <ul>
+                    <li><span>Hotel Name</span><br>mooya</li>
+                    <li><span>Place</span><br>Saint Martin, Bangladesh</li>
+                    <li><span>View from room</span><br>Has an amaizing view of the sea</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="Expense8">
+                <ul>
+
+                    <li><span>single bedroom</span><br>Per night 1000$</li>
+                    <li><span>double bedroom </span><br>Per night 2000$ </li>
+                    <li><span>For more enquiry</span><br>contact us directly</li>
+                </ul>
+            </div> 
+            <div class="tab-contents" id="avail8">
+                <ul>
+                    <li><span>single bedroom</span><br>20 such rooms are available<br></li>
+                    <li><span>Double bedroom</span><br>5 such rooms are available</li>
+                    <li><span>For Booking</span><br>ID number is 9007</li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+
+
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+
+            }
+        }
+    </script>
